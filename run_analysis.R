@@ -1,17 +1,3 @@
-PROYECTO FINAL CURSO GETTING & CLEANING DATA - COURSERA
-
-Se puede encontrar aquí en el repositorio,
-
-El script run_analysis.R script que contiene el código para la onbtención del set de datos final.
-El presente README.md con la descripción del detalle de cómo funciona el código.
-El Codebook.md con la descripción de los objetos más importantes creados dentro del Código.
-
-Este código está desarrollado en R, y es importante que actualice el directorio donde lo ejecutará (environment). Es importante la descarga del archivo 
-"getdata_projectfiles_UCI HAR Dataset.zip"
-
-
-Se debe invocar la libreary (dplyr)
-
 
 #ACTIVIDAD 1
 
@@ -62,10 +48,10 @@ names(Setdatosord)<-gsub("-std()", "STD", names(Setdatosord), ignore.case = TRUE
 names(Setdatosord)<-gsub("-freq()", "Frequency", names(Setdatosord), ignore.case = TRUE)
 names(Setdatosord)<-gsub("angle", "Angle", names(Setdatosord))
 names(Setdatosord)<-gsub("gravity", "Gravity", names(Setdatosord))
+
 View(Setdatosord)
 
 #ACTIVIDAD 5: se obtiene el Set de Datos Final
-
 SetDatosFinal <- aggregate( . ~ Subject + actividad, data = Setdatosord, FUN = mean )
 SetDatosFinal <-SetDatosFinal[order(SetDatosFinal$Subject,SetDatosFinal$actividad),]
 write.table(SetDatosFinal, file = "SetDatosFinal.txt",row.name=FALSE)
