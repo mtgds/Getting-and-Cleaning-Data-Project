@@ -2,15 +2,15 @@ PROYECTO FINAL CURSO GETTING & CLEANING DATA - COURSERA
 
 Se puede encontrar aquí en el repositorio,
 
-El script run_analysis.R script que contiene el código para la onbtención del set de datos final.
-El presente README.md con la descripción del detalle de cómo funciona el código.
-El Codebook.md con la descripción de los objetos más importantes creados dentro del Código.
+- El script run_analysis.R script que contiene el código para la onbtención del set de datos final.
+- El presente README.md con la descripción del detalle de cómo funciona el código.
+- El Codebook.md con la descripción de los objetos más importantes creados dentro del Código.
 
 Este código está desarrollado en R, y es importante que actualice el directorio donde lo ejecutará (environment). Es importante la descarga del archivo 
 "getdata_projectfiles_UCI HAR Dataset.zip"
 
 
-Se debe invocar la libreary (dplyr)
+Se debe invocar la library (dplyr)
 
 
 #ACTIVIDAD 1
